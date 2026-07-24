@@ -6,6 +6,7 @@ class Betterreview < Formula
 
   depends_on "gh"
   depends_on "git-delta"
+  depends_on "glab"
 
   on_macos do
     if Hardware::CPU.arm?
@@ -28,10 +29,9 @@ class Betterreview < Formula
 
   def caveats
     <<~EOS
-      Authenticate with GitHub before the first review:
-        gh auth login
-      For GitLab merge requests, also install glab:
-        brew install glab && glab auth login
+      Authenticate before the first review:
+        gh auth login    # GitHub
+        glab auth login  # GitLab
     EOS
   end
 
