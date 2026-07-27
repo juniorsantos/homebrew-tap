@@ -1,7 +1,7 @@
 class Betterreview < Formula
   desc "Terminal code review for GitHub PRs and GitLab MRs"
   homepage "https://github.com/juniorsantos/betterreview"
-  version "0.5.0"
+  version "1.0.0"
   license "MIT"
 
   depends_on "gh"
@@ -10,17 +10,17 @@ class Betterreview < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/juniorsantos/betterreview/releases/download/v0.5.0/betterreview-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e686ff5a15eb89a7080097ee694a4ec7af907dce7666a3768b4d17cb0700b123"
+      url "https://github.com/juniorsantos/betterreview/releases/download/v1.0.0/betterreview-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "cf4be622b06cba92e33474c742a0c3fb9a884735156b9d5a564dceb26db8bd7f"
     else
-      url "https://github.com/juniorsantos/betterreview/releases/download/v0.5.0/betterreview-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1a01e7ac918a05573b3fcfbd2abafe2dfaa7bd228b0c56181b161908cac1dd7c"
+      url "https://github.com/juniorsantos/betterreview/releases/download/v1.0.0/betterreview-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d0aca9c793eb3ae79e7cfed0c97fd50cfb7455634ab90b749dc060ecaf5afe23"
     end
   end
 
   on_linux do
-    url "https://github.com/juniorsantos/betterreview/releases/download/v0.5.0/betterreview-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "198463e69f4c4834a24a924e95e3a4bd729a568c3500bbf970ff6099965af88f"
+    url "https://github.com/juniorsantos/betterreview/releases/download/v1.0.0/betterreview-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "a78518a7c261efaafbdc2284d0480bd08c763c6fe306732bdfdc04f35bfe6048"
   end
 
   def install
